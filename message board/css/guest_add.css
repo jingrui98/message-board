@@ -1,0 +1,204 @@
+* { margin: 0; padding: 0; }
+body {font-family: Verdana, Arial; font-size: 12px; line-height: 18px; }
+a { text-decoration: none; }
+.container{margin: 20px auto; width: 1000px; background: #fff;}
+h3 { margin-bottom: 15px; font-size: 22px; text-shadow: 2px 2px 2px #ccc; }
+
+.fankui {
+	width: 490px;
+	float: left;
+	padding-left:15px;
+	padding-top:15px;
+}
+
+#contactform {
+	width: 450px;
+	padding: 20px;
+	background: #f0f0f0;
+	overflow:auto;
+	float:left;
+
+	border: 1px solid #cccccc;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;	
+
+	-moz-box-shadow: 4px 4px 5px #cccccc;
+	-webkit-box-shadow: 4px 4px 5px #cccccc;
+	box-shadow: 4px 4px 5px #cccccc;
+
+}
+
+.field{margin-bottom:7px;}
+
+label {
+	font-family: Arial, Verdana; 
+	text-shadow: 2px 2px 2px #ccc;
+	display: block; 
+	float: left; 
+	font-weight: bold; 
+	margin-right:10px; 
+	text-align: right; 
+	width: 120px; 
+	line-height: 25px; 
+	font-size: 15px; 
+}
+
+.input{
+	font-family: Arial, Verdana; 
+	font-size: 15px; 
+	padding: 5px; 
+	border: 1px solid #b9bdc1; 
+	width: 300px; 
+	color: #797979;	
+}
+
+.input:focus{
+	background-color:#E7E8E7;	
+}
+
+input, img{ vertical-align:middle}
+
+
+.lxfs{
+	font-family: Arial, Verdana; 
+	font-size: 15px; 
+	padding: 5px; 
+	border: 1px solid #b9bdc1; 
+	width: 148px; 
+	color: #797979;	
+}
+
+.lxfs:focus{
+	background-color:#E7E8E7;	
+}
+
+.yzm{
+	font-family: Arial, Verdana; 
+	font-size: 15px; 
+	padding: 5px; 
+
+	border: 1px solid #b9bdc1;
+	width: 141px; 
+	height: 20px;
+	color: #797979;	
+}
+
+.yzm:focus{
+	background-color:#E7E8E7;	
+}
+
+
+
+.textarea {
+	height:150px;	
+}
+
+.hint{
+	display:none;
+}
+
+.field:hover .hint {  
+	position: absolute;
+	display: block;  
+	margin: -30px 0 0 455px;
+	color: #FFFFFF;
+	padding: 7px 10px;
+	background: rgba(0, 0, 0, 0.6);
+
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;	
+}
+
+.button{
+	float: right;
+	margin:10px 55px 10px 0;
+	font-weight: bold;
+	line-height: 1;
+	padding: 6px 10px;
+	cursor:pointer;   
+	color: #fff;
+
+	text-align: center;
+	text-shadow: 0 -1px 1px #64799e;
+
+	/* Background gradient */
+	background: #a5b8da;
+	background: -moz-linear-gradient(top, #a5b8da 0%, #7089b3 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a5b8da), to(#7089b3));
+
+	/* Border style */
+	border: 1px solid #5c6f91;  
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+
+	/* Box shadow */
+	-moz-box-shadow: inset 0 1px 0 0 #aec3e5;
+	-webkit-box-shadow: inset 0 1px 0 0 #aec3e5;
+	box-shadow: inset 0 1px 0 0 #aec3e5;
+
+}
+
+.button:hover {
+	background: #848FB2;
+	cursor: pointer;
+}
+
+
+.back_btn { background: -moz-linear-gradient(center top , #FFFFFF, #F2F2F2) repeat scroll 0 0 transparent;
+				   border-color: #DEDEDE #B5B6B5 #B5B6B5 #DEDEDE;
+				   border-style: solid;
+				   border-width: 1px;
+				   text-align: center;
+				   float: left;
+				   height: 23px;
+				   line-height: 23px;
+				   margin-left: 5px;
+				   width: 51px;
+}
+h1 {text-align:center; margin:20px}
+
+.huifu {width:480px;height:60px; background:rgb(245,245,245); border:1px solid rgb(217,217,217);padding-left:10px;padding-top:10px;
+		margin-bottom:5px;
+}
+.huifu p {color:rgb(153,153,153);}
+.huifu .huifu_show {margin-top:8px;}
+.huifu .bk_content {width:400px; border-width: 1px; border-style: solid; border-color: #AAA #DDD #DDD #AAA;
+					  height: 15px; line-height: 12px;
+					  padding:4px 5px;
+					  float:left;
+}
+
+.content{width:500px;  background:white; border:1px solid rgb(243,230,198);
+		 padding:10px 15px 5px;
+		 margin-top: 8px;
+}
+.content .c_title {
+	border-bottom: 1px solid #F7E7C6;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 0 0 2px;
+	font-weight:bold;
+}
+.content .back_btn_p {height:30px;}
+.content .c_title span {float:right;font-weight:normal; color:rgb(156,154,156);}
+.content .back_content {
+	border-top: 1px dotted #F7E7C6;
+	padding-left: 50px;
+}
+.content .back_content .back_detail {padding: 5px;}
+.content .back_content strong {
+	color: #BEBEBE;
+	display: inline;
+	float: left;
+	font-family: arial;
+	font-size: 20px;
+	margin: 5px 0 0 -45px;
+	text-align: right;
+	width: 45px;
+}
+.content .c_content {color:rgb(51,51,51);}
+.content .back_time {padding:5px 0; color:rgb(156,154,156);}
+.content .back_neirong {color:rgb(51,51,51);}

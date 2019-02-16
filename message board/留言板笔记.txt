@@ -1,0 +1,51 @@
+add_show1.php             留言板界面
+add_show.php               收集表单信息添加留言页面
+admin_index.php           留言板后台管理界面
+admin_update.php        修改留言界面
+message_delete.php      收集表单信息删除留言页面
+admin_update_act.php  收集表单信息修改留言页面
+back_act.php                 收集表单信息回复留言页面
+login.php                       后台登录界面
+admin_changepass.php 修改密码界面//无功能
+admin_setting.php         系统设置界面//无功能
+
+问题1：html页面点击提交后是空白界面
+解决：直接右键浏览器打开的html,没有经过apache,浏览器无法解析php
+
+问题2：修改代码后浏览器刷新不生效
+解决：http://localhost/guest/add_show.html?arg=0
+
+问题3：php7连接不上mysql
+解决：$mysqli = new mysqli("localhost", "root", "password", "database");
+
+问题4：留言板无法向数据库中添加中文
+解决：删库，建库时默认使用utf8编码
+create database messages default charset utf8;
+mysql> create table guestmessage(
+    -> id int primary key auto_increment,
+    -> method varchar(32),
+    -> method_v varchar(32),
+    -> title varchar(64),
+    -> content varchar(200),
+    -> add_time varchar(32)
+    -> );
+//留言内容在guestmessage存放，回复内容在guestback存放
+创建guestback表：
+mysql> create table guestback(
+    -> back_id int primary key auto_increment,
+    -> back_content varchar(200),
+    -> back_time datetime
+    -> );
+alter table guestback add message_id int;
+
+问题5：mysql_fetch_assoc()函数报错
+解决：php7不支持mysql模块
+while ($rzt = $qry->fetch_assoc()){
+        
+    print_r($rzt);
+           
+    echo "<br />";
+}
+
+
+
